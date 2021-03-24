@@ -36,7 +36,7 @@ jobs:
     - name: Test with pytest
       run: |
         mkdir testresults
-        pytest Test/unit_test --junitxml=./testresults/test-results.xml
+        pytest Tests/unit_test --junitxml=./testresults/test-results.xml
     
     - name: Publish Unit Test Results
       uses: EnricoMi/publish-unit-test-result-action@v1.10
